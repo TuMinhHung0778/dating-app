@@ -5,6 +5,7 @@ import { Edit2, Save, X } from "lucide-react";
 import AuthGuard from "@/components/layout/AuthGuard";
 import { userService, getErrorMessage } from "@/lib/services";
 import { useAuthStore } from "@/store/authStore";
+import type { Gender } from "@/types";
 
 export default function ProfilePage() {
   const { user, updateUser } = useAuthStore();
@@ -27,7 +28,7 @@ export default function ProfilePage() {
       const res = await userService.updateProfile({
         name: form.name,
         age: Number(form.age),
-        gender: form.gender as any,
+        gender: form.gender as Gender,
         bio: form.bio,
         location: form.location,
       });

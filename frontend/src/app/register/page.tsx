@@ -9,7 +9,7 @@ import { useAuthStore } from "@/store/authStore";
 export default function RegisterPage() {
   const router = useRouter();
   const { setAuth, user, init, isLoading } = useAuthStore();
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<Record<string, string>>({
     name: "",
     email: "",
     password: "",
@@ -82,7 +82,7 @@ export default function RegisterPage() {
       </label>
       <input
         type={type}
-        value={(form as any)[name]}
+        value={form[name] || ""}
         onChange={(e) => set(name, e.target.value)}
         placeholder={placeholder}
         className={`w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-pink-400 focus:border-pink-400 transition ${errors[name] ? "border-red-400" : "border-gray-300"}`}

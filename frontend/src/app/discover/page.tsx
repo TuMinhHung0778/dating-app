@@ -4,7 +4,6 @@ import toast from "react-hot-toast";
 import { Heart, HeartOff, MapPin, User } from "lucide-react";
 import AuthGuard from "@/components/layout/AuthGuard";
 import { userService, likeService, getErrorMessage } from "@/lib/services";
-import { useAuthStore } from "@/store/authStore";
 import type { UserWithStatus, User as UserType } from "@/types";
 
 // ─── It&apos;s a Match Modal ──────────────────────────────────────────────────
