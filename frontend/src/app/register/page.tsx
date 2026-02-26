@@ -6,10 +6,20 @@ import toast from "react-hot-toast";
 import { authService, getErrorMessage } from "@/lib/services";
 import { useAuthStore } from "@/store/authStore";
 
+interface RegisterForm {
+  name: string;
+  email: string;
+  password: string;
+  age: string;
+  gender: string;
+  bio: string;
+  location: string;
+}
+
 export default function RegisterPage() {
   const router = useRouter();
   const { setAuth, user, init, isLoading } = useAuthStore();
-  const [form, setForm] = useState<Record<string, string>>({
+  const [form, setForm] = useState<RegisterForm>({
     name: "",
     email: "",
     password: "",
