@@ -7,7 +7,7 @@ import { userService, likeService, getErrorMessage } from "@/lib/services";
 import { useAuthStore } from "@/store/authStore";
 import type { UserWithStatus, User as UserType } from "@/types";
 
-// ─── It's a Match Modal ───────────────────────────────────────────────────────
+// ─── It&apos;s a Match Modal ──────────────────────────────────────────────────
 function MatchModal({
   user,
   matchId,
@@ -21,7 +21,9 @@ function MatchModal({
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl p-8 text-center max-w-sm w-full shadow-2xl">
         <div className="text-5xl mb-4">🎉</div>
-        <h2 className="text-2xl font-bold text-pink-500 mb-2">It's a Match!</h2>
+        <h2 className="text-2xl font-bold text-pink-500 mb-2">
+          It&apos;s a Match!
+        </h2>
         <p className="text-gray-600 mb-1">
           Bạn và <strong>{user.name}</strong> đã thích nhau!
         </p>
@@ -165,7 +167,6 @@ function ProfileCard({
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function DiscoverPage() {
-  const { user: currentUser } = useAuthStore();
   const [users, setUsers] = useState<UserWithStatus[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
