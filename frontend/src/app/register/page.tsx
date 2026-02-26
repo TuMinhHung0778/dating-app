@@ -52,7 +52,7 @@ export default function RegisterPage() {
     return e;
   };
 
-  const set = (field: string, val: string) => {
+  const set = (field: keyof RegisterForm, val: string) => {
     setForm((f) => ({ ...f, [field]: val }));
     setErrors((e) => ({ ...e, [field]: "" }));
   };
@@ -82,7 +82,7 @@ export default function RegisterPage() {
 
   const field = (
     label: string,
-    name: string,
+    name: keyof RegisterForm,
     type = "text",
     placeholder = "",
   ) => (
