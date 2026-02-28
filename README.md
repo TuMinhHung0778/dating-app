@@ -2,7 +2,7 @@
 
 Ứng dụng này là bản prototype mini của một Dating App (tương tự Breeze) được xây dựng cho bài test Web Developer Intern tại Clique83.com.
 
-### 1. Cách tôi tổ chức hệ thống
+### 1. Cách em tổ chức hệ thống
 
 - **Monorepo `dating-app`**
   - **`backend/`**: API server dùng **Node.js + Express + MongoDB (Mongoose)**.
@@ -141,7 +141,7 @@ Nhìn chung: **BE** chịu trách nhiệm toàn bộ business logic & lưu trữ
 
 Nhìn chung **logic chính đã đúng yêu cầu**; không có bug logic nghiêm trọng cần fix gấp. Một số điểm có thể cải tiến được liệt kê ở phần tiếp theo.
 
-### 6. Nếu có thêm thời gian tôi sẽ cải thiện gì?
+### 6. Nếu có thêm thời gian em sẽ cải thiện gì?
 
 - **Cải thiện UX Khám phá & Match**
   - Thêm filter tìm kiếm theo giới tính, độ tuổi, địa điểm để user dễ tìm profile phù hợp hơn.
