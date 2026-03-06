@@ -170,4 +170,5 @@ Nhìn chung **logic chính đã đúng yêu cầu**; không có bug logic nghiê
 
 ---
 
-Nếu anh/chị cần thêm thông tin (ví dụ: cách chạy project, config MongoDB hoặc demo API), em có thể bổ sung thêm vào README theo format mong muốn.
+Server backend : 
+https://dating-app-backend-dkl0.onrender.com ( dùng miễn phí nên phải đợi server khởi động )
