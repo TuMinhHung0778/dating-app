@@ -171,4 +171,4 @@ Nhìn chung **logic chính đã đúng yêu cầu**; không có bug logic nghiê
 ---
 
 Server backend : 
-https://dating-app-backend-dkl0.onrender.com ( dùng miễn phí nên phải đợi server khởi động )
+[https://dating-app-backend-dkl0.onrender.com ](https://dating-app-backend-dkl0.onrender.com/health)( dùng miễn phí nên phải đợi server khởi động )
